@@ -1,7 +1,7 @@
 
 <template name="views_Flipper">
 
-		{{#Flipper translate="[50,0]"}}
+		{{#Flipper translate="[0,0]"}}
 			{{>Surface target="front" template="views_Flipper_front"}}
 			{{>Surface target="back" template="views_Flipper_back"}}
 		{{/Flipper}}
@@ -9,7 +9,7 @@
 		
 		{{#Surface}}
 			{{#sh_highlight lang="html"}}
-				{{dstache}}#Flipper translate="[100,0]"}}
+				{{dstache}}#Flipper translate="[0,0]"}}
 					{{dstache}}>ImageSurface target="front" template="views_Flipper_front"}}
 					{{dstache}}>ImageSurface target="back" template="views_Flipper_back"}}
 				{{dstache}}/Flipper}}
@@ -23,7 +23,7 @@
 				Template.views_Flipper_front.events({
 					"click": function(event, tpl) {
 						var famousData = famousCmp.dataFromTemplate(tpl);
-						famousCmp.mainCtx.setPerspective(500);
+						famousCmp.mainCtx.setPerspective(0);
 						famousData.parent.viewNode
 							.setAngle(Math.PI, { curve : "easeOutBounce", duration : 500},
 								perspectiveZero);
@@ -33,7 +33,7 @@
 				Template.views_Flipper_back.events({
 					"click": function(event, tpl) {
 						var famousData = famousCmp.dataFromTemplate(tpl);
-						famousCmp.mainCtx.setPerspective(500);
+						famousCmp.mainCtx.setPerspective(0);
 						famousData.parent.viewNode
 							.setAngle(1, { curve : "easeOutBounce", duration : 500},
 								perspectiveZero);
@@ -44,5 +44,5 @@
 	
 </template>
 
-<template name="views_Flipper_front">{{> instagram}}</template>
-<template name="views_Flipper_back">{{> instagram2}}</template>
+<template name="views_Flipper_front" style="width: 100px; height: 100px">{{> instagram}}</template>
+<template name="views_Flipper_back" style="width: 100px; height: 100px">{{> instagram2}}</template>
