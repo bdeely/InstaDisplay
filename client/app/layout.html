@@ -5,30 +5,17 @@
     </header>
 		{{#if currentUser}}		    
 		    {{> home}}
-		    {{> loginButtons}}
+		    <!-- {{> loginButtons}} -->
 		{{else}}
-			{{> loginButtons}}
+			<!-- {{> loginButtons}} -->
 			<h1>#PamuRico</h1>	
-			{{> instagram}}
+			<!-- {{> instagram}} -->
+
+			{{> views_Flipper}} 
+
 		{{/if}}
     <footer>
         {{> footer}}
     </footer>
 
-</template>
-
-
-
-<template name="instagram">
-	<div id="bg">
-		<div>
-			<table cellpadding="0" cellspacing="0">
-				<tr>
-					<td>
-						{{> currentTag}}
-					</td>
-				</tr>
-			</table>
-		</div>
-	</div> 
 </template>

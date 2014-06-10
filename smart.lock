@@ -7,7 +7,9 @@
       "instagram-wrapper": {},
       "npm": {},
       "fast-render": {},
-      "instagram": {}
+      "instagram": {},
+      "famono": {},
+      "famous-components": {}
     },
     "packages": {
       "iron-router": {
@@ -40,10 +42,25 @@
         "tag": "v0.2.2",
         "commit": "e367dc7c5f9d0164ec09f65b9d40058620e312bc"
       },
+      "famono": {
+        "git": "https://github.com/raix/Meteor-famono.git",
+        "tag": "v0.2.2",
+        "commit": "33439a1a1ba001772a2d2b26db1825875ba64f90"
+      },
+      "famous-components": {
+        "git": "https://github.com/gadicc/meteor-famous-components.git",
+        "tag": "v0.0.11",
+        "commit": "5af796b2253490d7a93950bb3b14241b9610e8fe"
+      },
       "blaze-layout": {
         "git": "https://github.com/EventedMind/blaze-layout.git",
         "tag": "v0.2.4",
         "commit": "b40e9b0612329288d75cf52ad14a7da64bb8618f"
+      },
+      "pince": {
+        "git": "https://github.com/mad-eye/pince.git",
+        "tag": "v0.0.5",
+        "commit": "4524ecc0bdf043c49dc62e91bbd8a99c661081ed"
       }
     }
   }
