@@ -21,6 +21,7 @@ Template.views_Flipper_front.events({
     }
 });
 
+
 Template.views_Flipper_back.events({
     'click': function(event, tpl) {
         var famousData = famousCmp.dataFromTemplate(tpl);
